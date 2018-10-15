@@ -1,0 +1,86 @@
+@font-face {
+	font-family: 'ambleregular';
+	src: url('fonts/Amble-Regular-webfont.eot');
+	src: url('fonts/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Amble-Regular-webfont.woff2') format('woff2'),
+	url('fonts/Amble-Regular-webfont.woff') format('woff'),
+	url('fonts/Amble-Regular-webfont.ttf') format('truetype'),
+	url('fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+body
+{
+	display: flex;
+	font-family: ambleregular, Arial, serif;
+	background-color: #f8f8ff;
+	margin: 0px;
+	/*border: 1px red solid;*/
+}
+header
+{
+	display: flex;
+	margin-bottom: 1%;
+}
+#name
+{
+	text-align: center;
+	flex: 1;
+}
+.protoprofil
+{
+	border-radius: 5%;
+	width: 163px;
+	height: 110px;
+}
+#border
+{
+	width: 15%;
+	background-color: #6e8b3d; /*#556b2f;*/
+	border-radius: 10px;
+}
+#bloc_page
+{
+	width: 85%;
+	padding: 1%;
+}
+
+h2
+{
+	color: #6e8b3d;
+}
+ul{
+	text-align: justify;
+}
+#corpo
+{
+	display: flex;
+	justify-content: space-between;
+}
+#experience
+{
+	width: 50%;
+	padding: 1%;
+}
+#skills
+{
+	width: 22%;
+	padding: 1%;
+}
+#education
+{
+	width: 28%;
+	padding: 1%;
+}
+footer
+{
+	margin-top: 20px;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 50px;
+}
+footer a 
+{
+	margin-right: 50px;
+}

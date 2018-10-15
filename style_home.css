@@ -1,0 +1,147 @@
+/*This is a comment*/
+@font-face {
+    font-family: 'ambleregular';
+    src: url('fonts/Amble-Regular-webfont.eot');
+    src: url('fonts/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Amble-Regular-webfont.woff2') format('woff2'),
+         url('fonts/Amble-Regular-webfont.woff') format('woff'),
+         url('fonts/Amble-Regular-webfont.ttf') format('truetype'),
+         url('fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body
+{
+	font-family: ambleregular, 'Trebuchet MS', Arial, sans-serif;
+	color: #181818;
+	background-color: #f8f8ff;
+	margin: 0px;
+}
+#bloc_page
+{
+	width: 1024px;
+	margin: auto;
+}
+nav a, #apropos, footer p
+{
+	text-transform: uppercase;
+	font-weight: normal;
+	text-align: center;
+	font-size: 1.3em;
+	color: #181818;
+}
+header p
+{
+	font-weight: bold;
+	text-align: center;
+}
+#by
+{
+	font-weight: 
+}
+header
+{
+	display: flex;
+	justify-content: space-between;
+}
+#logos
+{
+	display: flex;
+	justify-content: space-between;
+}
+nav
+{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+}
+nav li
+{
+	margin-right: 50px;
+}
+.banner
+{
+	margin-bottom: 5px;
+	color: white;
+	width: 100%;
+	border: 1px solid green;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+#android_banner
+{
+	height: 554px;
+	background: url('contenu/images/android_app_dev2.jpg');
+}
+#ios_banner
+{
+	height: 477px;
+	background: url('contenu/images/ios_app_dev2.jpeg');
+}
+.more
+{
+	border: 1px solid black;
+	background-color: green;
+	padding: 10px;
+}
+#presentation_title
+{
+	text-align: center;
+}
+#section_1
+{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	/*border: 1px solid black;*/
+	
+}
+#article_1
+{
+	width: 70%;
+	padding: 10px;
+	/*border: 1px solid red;*/
+	
+}
+#aside_1
+{
+	width: 25%;
+	display: flex;
+	flex-direction: column; 
+}
+aside div
+{
+	padding: 10px;
+	background-color: white;
+	border-radius: 3%;
+	/*border: 1px solid green;*/
+}
+#author_photo
+{
+	text-align: center;
+}
+p
+{
+	text-align: justify;
+}
+#social
+{
+	/*align-content: stretch;*/
+	display: flex;
+	justify-content: space-around;
+}
+footer
+{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 50px;
+}
+
