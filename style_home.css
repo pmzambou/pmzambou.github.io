@@ -1,4 +1,4 @@
-/*This is a comment*/
+/*Import font*/
 @font-face {
     font-family: 'ambleregular';
     src: url('fonts/Amble-Regular-webfont.eot');
@@ -9,7 +9,6 @@
          url('fonts/Amble-Regular-webfont.svg#ambleregular') format('svg');
     font-weight: normal;
     font-style: normal;
-
 }
 body
 {
@@ -18,29 +17,36 @@ body
 	background-color: #f8f8ff;
 	margin: 0px;
 }
-#bloc_page
+#bloc_page, #header
 {
 	width: 1024px;
 	margin: auto;
 }
-nav a, #apropos, footer p
+nav a, #apropos
 {
 	text-transform: uppercase;
 	font-weight: normal;
 	text-align: center;
 	font-size: 1.3em;
 	color: #181818;
+	text-decoration: none;
+}
+nav a:hover
+{
+    color: #6e8b3d;
+    border-bottom: 3px solid #6e8b3d;
 }
 header p
 {
 	font-weight: bold;
 	text-align: center;
 }
-#by
-{
-	font-weight: 
-}
 header
+{
+	background-color: #8ee5ee;
+	margin-bottom: 50px;
+}
+#header /*header division*/
 {
 	display: flex;
 	justify-content: space-between;
@@ -71,33 +77,31 @@ nav li
 	float: left;
 	margin: 2%;
 }
-/*#ios_banner
-{
-	border-radius: 10px;
-	margin: 0px 0px 10px 0px;
-}
-*/
 .more
 {
-	text-align:right;
+	position: absolute;
+	bottom: 0px;
+	right: 2%;
+	background-color: #bdb76b;
+	color: #fffaf0;
+	border-radius: 3px;
+	text-decoration: none;
 }
 #presentation_title
 {
+	width: 70%;
 	text-align: center;
 }
-#section_1
+#section_1_div
 {
 	display: flex;
 	justify-content: space-between;
-	margin-top: 20px;
-	/*border: 1px solid black;*/
-	
+
 }
 #article_1
 {
 	width: 70%;
 	padding: 10px;
-	/*border: 1px solid red;*/
 	
 }
 #aside_1
@@ -109,15 +113,15 @@ nav li
 #aside_1 div
 {
 	padding: 10px;
-	background-color: white;
+	background-color: #eedfcc;
 	border-radius: 3%;
-	/*border: 1px solid green;*/
 }
 #section_2, #section_3
 {
-	width: 75%;
-	padding: 1%;
+	width: 70%;
+	padding: 10px;
 	text-align: center;
+	position: relative;
 }
 #author_photo
 {
@@ -129,7 +133,6 @@ p
 }
 #social
 {
-	/*align-content: stretch;*/
 	display: flex;
 	justify-content: space-around;
 }
@@ -139,9 +142,5 @@ footer
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 50px;
-}
-.green_button
-{
-	background-color: green;
 }
 
