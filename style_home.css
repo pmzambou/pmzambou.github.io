@@ -16,17 +16,17 @@ body
 	color: #181818;
 	background-color: #f8f8ff;
 	margin: 0px;
+	font-size: 1em;
 }
 #bloc_page, #header
 {
-	width: 1024px;
+	width: 75%;
 	margin: auto;
 }
 nav a, #apropos
 {
 	text-transform: uppercase;
 	font-weight: normal;
-	text-align: center;
 	font-size: 1.3em;
 	color: #181818;
 	text-decoration: none;
@@ -59,17 +59,16 @@ header
 nav
 {
 	display: flex;
-    justify-content: center;
+	flex:1;
+    justify-content: flex-end;
     align-items: center;
 }
 nav ul
 {
 	list-style-type: none;
 	display: flex;
-}
-nav li
-{
-	margin-right: 50px;
+	flex:1;
+	justify-content: space-around;
 }
 #android_banner, #ios_banner
 {
@@ -89,14 +88,13 @@ nav li
 }
 #presentation_title
 {
-	width: 70%;
-	text-align: center;
+	width: 75%;
+	text-align: left;
 }
 #section_1_div
 {
 	display: flex;
 	justify-content: space-between;
-
 }
 #article_1
 {
@@ -108,13 +106,14 @@ nav li
 {
 	width: 25%;
 	display: flex;
-	flex-direction: column; 
 }
 #aside_1 div
 {
 	padding: 10px;
 	background-color: #eedfcc;
 	border-radius: 3%;
+	flex-direction: column;
+	text-align: center;
 }
 #section_2, #section_3
 {
@@ -144,3 +143,107 @@ footer
 	margin-bottom: 50px;
 }
 
+/*CSS for mobile phones*/
+
+@media all and (min-width: 554px ) and (max-width: 1024px)
+{
+	body
+{
+	width: auto;
+	font-size: 1.1em;
+}
+#bloc_page
+{
+	width: 100%;
+}
+header
+{
+	width: auto;
+}
+#header
+{
+	width: auto;
+}
+nav ul
+{
+	flex-wrap: wrap;
+}
+nav li
+{
+	margin-right: 10%;
+}
+section
+{
+	width: auto;
+}
+#section_1, #article_1, #aside_1
+{
+	width: auto;
+}
+#section_1_div
+{
+	flex-wrap: wrap;
+}
+#social
+{
+	flex-wrap: wrap;
+}
+}
+
+@media all and (max-width: 553px)
+{
+	body, #bloc_page, header, #header
+{
+	width: auto;
+	font-size: 1.2em;
+}
+	nav ul
+{
+	width: auto;
+	height: 100%;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: space-between;
+}
+#section_1_div
+{
+	flex-direction: column;
+}
+#section_2, #section_3, #article_1, #aside_1
+{
+	width: auto;
+}
+}
+
+@media all and (max-device-width: 480px)
+{
+	body
+	{
+		margin:auto;
+		font-size: 1.2em;
+	}
+	#bloc_page, header, #header
+{
+	width: auto;
+}
+	nav ul
+{
+	width: auto;
+	height: 100%;
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: space-between;
+}
+#section_1_div
+{
+	flex-direction: column;
+}
+#section_2, #section_3, #article_1, #aside_1
+{
+	width: auto;
+}
+}

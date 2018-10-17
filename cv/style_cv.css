@@ -15,7 +15,8 @@ body
 	display: flex;
 	font-family: ambleregular, Arial, serif;
 	background-color: #f8f8ff;
-	margin: 0px;
+	margin: 0%;
+	font-size: 1em;
 	/*border: 1px red solid;*/
 }
 header
@@ -27,18 +28,13 @@ header
 {
 	text-align: center;
 	flex: 1;
-}
-.protoprofil
-{
-	border-radius: 5%;
-	width: 163px;
-	height: 110px;
+	margin-right: 5%
 }
 #border
 {
 	width: 15%;
 	background-color: #6e8b3d; /*#556b2f;*/
-	border-radius: 10px;
+	border-radius: 2%;
 }
 #bloc_page
 {
@@ -75,12 +71,101 @@ ul{
 }
 footer
 {
-	margin-top: 20px;
+	margin-top: 3%;
 	display: flex;
-	justify-content: flex-end;
-	margin-bottom: 50px;
+	justify-content: space-around;
+	margin-bottom: 3%;
 }
-footer a 
+
+@media all and (min-width: 554px ) and (max-width: 1024px)
 {
-	margin-right: 50px;
+	body
+	{
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		font-size: 1.1em;
+	}
+	#bloc_page
+	{
+		width: auto;
+	}
+	#border
+	{
+		width: auto;
+		height: 100px;
+		border-radius: 0%;
+	}
+	#corpo
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	#experience, #skills, #education
+	{
+		width: auto;
+		text-align: justify;
+	}
+}
+
+@media all and (max-width: 553px)
+{
+	body
+	{
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		font-size: 1.2em;
+	}
+	#bloc_page
+	{
+		width: auto;
+	}
+	#border
+	{
+		width: auto;
+		height: 100px;
+		border-radius: 0%;
+	}
+		#corpo
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	#experience, #skills, #education
+	{
+		width: auto;
+		text-align: justify;
+	}
+}
+
+@media all and (max-device-width: 480px)
+{
+	body
+	{
+		width: auto;
+		display: flex;
+		flex-direction: column;
+		font-size: 1.2em;
+	}
+	#bloc_page
+	{
+		width: auto;
+	}
+	#border
+	{
+		width: auto;
+		height: 100px;
+		border-radius: 0%;
+	}
+		#corpo
+	{
+		display: flex;
+		flex-direction: column;
+	}
+	#experience, #skills, #education
+	{
+		width: auto;
+		text-align: justify;
+	}
 }
